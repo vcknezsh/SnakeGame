@@ -1,11 +1,43 @@
-.App {
-  text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container{
+  background-color: rgb(78, 154, 70);
+  width:100vh;
+
+  max-height: 100vh;
+  display:grid;
+
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 5rem 1fr 1fr;
+  overflow: hidden;
+  
+  
+
+}
+
+.maincontent{
+ 
+  background-color: rgb(3, 158, 98);
+  grid-column: 1/4;
+  grid-row:2/4;
+}
+
+s
+.navbar{
+  background-color: rgb(171, 127, 25);
+  grid-column:0/4;
+  grid-row: 1/1;
+  
+
+}
+.home{
+  background-color: black;
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.playbutton{
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+
+
 }
